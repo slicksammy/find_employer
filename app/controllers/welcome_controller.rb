@@ -1,6 +1,9 @@
 class WelcomeController < ApplicationController
   def submit_email
     @email = params[:email]
+    # make model
+    id = 10
+    session[:id] = 10
   end
   
   def submit_info
@@ -10,6 +13,6 @@ class WelcomeController < ApplicationController
     # params[:sam_checkbox_1]
     # params[:sam_checkbox_2]
     # params[:sam_checkbox_3]
-    @params = params
+    @params = params.merge({ session_id: session[:id] });
   end
 end

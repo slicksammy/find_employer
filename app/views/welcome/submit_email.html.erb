@@ -11,7 +11,7 @@
  
       <div class="row">
         <div class="col-md-6 col-sm-12 col-md-offset-3 subscribe">
-          <form class="form-horizontal" role="form" action="/welcome/submit_info" id="subscribeForm" method="POST">
+          <form class="form-horizontal" role="form" action="/welcome/submit_info" style="text-align: left;" id="subscribeForm" method="POST">
 						<div class="form-group">
 							<label for="sam_text_input">Text Input</label>
 							<input class="form-control input-lg" name="sam_text_input" type="text" id="sam_text_input" required="required" />
@@ -20,7 +20,7 @@
 							<label for="sam_text_area">Text Area</label>
 							<textarea class="form-control input-lg" name="sam_text_area" id="sam_text_area" required="required"></textarea>
 						</div>
-						<div class="form-group">
+						<div class="form-group" style="color: black;">
 							<label for="sam_select">Select</label>
 							<select name="sam_select" id="sam_select" required="required">
 								<option value="sam_select_option_1">Option 1</option>
@@ -31,19 +31,19 @@
 						<div class="form-group">
 							<div class="checkbox">
 								<label>
-									<input type="checkbox" value="sam_checkbox_1" />
+									<input type="checkbox" name="sam_checkbox_1" value="true" />
 									Language 1
 								</label>
 							</div>
 							<div class="checkbox">
 								<label>
-									<input type="checkbox" value="sam_checkbox_2" />
+									<input type="checkbox" name="sam_checkbox_2" value="true"  />
 									Language 2
 								</label>
 							</div>
 							<div class="checkbox">
 								<label>
-									<input type="checkbox" value="sam_checkbox_3" />
+									<input type="checkbox" name="sam_checkbox_3" value="true"  />
 									Language 3
 								</label>
 							</div>
