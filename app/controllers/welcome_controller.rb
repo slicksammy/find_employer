@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
-  def create
+  def submit_email
     @email = params[:email]
   end
 end
