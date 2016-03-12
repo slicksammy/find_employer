@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root 'welcome#index'
   post 'welcome/submit_email' => 'welcome#submit_email'
+  post 'welcome/submit_info' => 'welcome#submit_info'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

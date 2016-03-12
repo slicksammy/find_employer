@@ -12,46 +12,7 @@
       <div class="row">
         <div class="col-md-6 col-sm-12 col-md-offset-3 subscribe">
           <form class="form-horizontal" role="form" action="/welcome/submit_info" id="subscribeForm" method="POST">
-						<div class="form-group">
-							<label for="sam_text_input">Text Input</label>
-							<input class="form-control input-lg" name="sam_text_input" type="text" id="sam_text_input" required="required" />
-						</div>
-						<div class="form-group">
-							<label for="sam_text_area">Text Area</label>
-							<textarea class="form-control input-lg" name="sam_text_area" id="sam_text_area" required="required"></textarea>
-						</div>
-						<div class="form-group">
-							<label for="sam_select">Select</label>
-							<select name="sam_select" id="sam_select" required="required">
-								<option value="sam_select_option_1">Option 1</option>
-								<option value="sam_select_option_2">Option 2</option>
-								<option value="sam_select_option_3">Option 3</option>
-							</select>
-						</div>
-						<div class="form-group">
-							<div class="checkbox">
-								<label>
-									<input type="checkbox" value="sam_checkbox_1" />
-									Language 1
-								</label>
-							</div>
-							<div class="checkbox">
-								<label>
-									<input type="checkbox" value="sam_checkbox_2" />
-									Language 2
-								</label>
-							</div>
-							<div class="checkbox">
-								<label>
-									<input type="checkbox" value="sam_checkbox_3" />
-									Language 3
-								</label>
-							</div>
-						</div>
-						
-						<div>
-							<button type="submit" class="btn btn-success btn-lg">DO STUFF</button>
-						</div>
+						<%= @params.to_s %>
           </form>
           <span id="result" class="alertMsg"></span> </div>
         </div>
